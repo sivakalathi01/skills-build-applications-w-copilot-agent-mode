@@ -30,7 +30,7 @@ SECRET_KEY = "django-insecure-je#2xdr+a44b$(!ps$gk)9(c3#3_a)(cd!f-(8s^!b5zdv@a*u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['bookish-rotary-phone-4p97qgwww953q65p-8000.app.github.dev', 'localhost', '127.0.0.1']
 
 
 # Application definition
