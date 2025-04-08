@@ -3,10 +3,10 @@
   "configurations": [
     {
       "name": "Launch Django Backend",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
-      "args": ["runserver", "0.0.0.0:8080"],
+      "args": ["runserver", "0.0.0.0:8000"],
       "django": true,
       "justMyCode": true,
       "python": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
@@ -24,7 +24,7 @@
       "cwd": "${workspaceFolder}/octofit-tracker/frontend",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start"],
-      "port": 3000
+      // Removed invalid "port" property
     }
   ]
 }
