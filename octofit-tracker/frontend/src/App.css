@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff; /* White text */
+  color: #ffffff; /* White text for visibility */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 /* Component styles */
 h1 {
-  color: #00008b; /* Dark blue header */
+  color: #00008b; /* Dark blue header name */
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -97,19 +97,39 @@ button:hover {
 }
 
 /* Logo styles */
-.logo {
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 1rem;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.logo img {
-  height: 50px;
-  margin-right: 1rem;
+/* Link styles */
+.App-link {
+  color: #61dafb;
 }
 
-/* Favicon styles */
-.favicon {
-  display: none; /* Favicon is handled in the HTML head */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
