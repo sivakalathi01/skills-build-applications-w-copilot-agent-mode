@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import sys
+import os
+
+# Add the backend directory to the Python path
+sys.path.insert(0, os.path.join(BASE_DIR, 'octofit_tracker'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
